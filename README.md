@@ -1,37 +1,64 @@
 # 🚀 DSA Journey
 
-Welcome to my Data Structures & Algorithms repository.
+A collection of my **Data Structures & Algorithms** solutions in **Java**, following a roadmap inspired by **Striver's A2Z DSA Sheet**.
 
-This repository contains my Java solutions to DSA problems solved on LeetCode. Each solution focuses on clean code, optimized approaches, and complexity analysis.
+## 📚 Roadmap
 
-## 📌 Language
-- Java
+* [ ] Learn the Basics
+* [ ] Learn Important Sorting Techniques
+* [ ] Arrays
+* [ ] Binary Search
+* [ ] Sliding Window & Two Pointer
+* [ ] Strings
+* [ ] Linked List
+* [ ] Stack & Queue
+* [ ] Bit Manipulation
+* [ ] Recursion (Pattern Wise + Backtracking)
+* [ ] Heaps (Priority Queue)
+* [ ] Greedy Algorithms
+* [ ] Binary Trees
+* [ ] Binary Search Trees
+* [ ] Graphs
+* [ ] Dynamic Programming
+* [ ] Tries
 
-## 📚 Platform
-- LeetCode
+## 📁 Repository Structure
 
-## 📂 Topics
-- Important Sorting Techniques
-- Arrays
-- Binary Search
-- Sliding Window & Two Pointer
-- Strings
-- Linked List
-- Stack
-- Queue
-- Bit Manipulation
-- Math
-- Trees
-- Binary Search Trees
-- Graphs
-- Heap / Priority Queue
-- Greedy
-- Backtracking
-- Dynamic Programming
+```text
+DSA-Journey/
+├── Basics/
+├── Sorting/
+├── Arrays/
+├── BinarySearch/
+├── SlidingWindow/
+├── Strings/
+├── LinkedList/
+├── Stack/
+├── Queue/
+├── BitManipulation/
+├── Recursion/
+├── Heaps/
+├── Greedy/
+├── BinaryTrees/
+├── BinarySearchTrees/
+├── Graphs/
+├── DynamicProgramming/
+└── Tries/
+```
 
-## 🎯 Goal
-- Strengthen problem-solving skills
-- Prepare for coding interviews
-- Build consistency through daily practice
+## 💡 Solution Format
 
-Happy Coding! 🚀
+* Brute Force
+* Better
+* Optimal
+* Time Complexity
+* Space Complexity
+* Well-Commented Java Code
+
+## 📈 Progress
+
+| Completed | Current          |
+| --------- | ---------------- |
+| 0 / 17    | Learn the Basics |
+
+⭐ If you find this repository useful, consider giving it a star.
