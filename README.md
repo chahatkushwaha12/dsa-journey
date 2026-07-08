@@ -25,7 +25,7 @@ A collection of my **Data Structures & Algorithms** solutions in **Java**, follo
 ## 📁 Repository Structure
 
 ```text
-DSA-Journey/
+dsa-journey/
 ├── Basics/
 ├── Sorting/
 ├── Arrays/
