@@ -14,8 +14,13 @@ public int reverseNumber(int n){
     int revNum = 0;
     // Build the reverse number one digit at a time
     while(n != 0){
+        // Get the last digit
         int lastDigit = n % 10;
-        revNum = (revNum*10)+lastDigit;
+
+        // Update the reversed number with the current digit.
+        revNum = (revNum * 10) + lastDigit;
+
+        // Remove the last digit
         n /= 10;
     }
     return revNum;
