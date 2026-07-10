@@ -1,13 +1,13 @@
 /*
  * Problem:
  * Given two positive integers, find their Greatest Common Divisor (GCD).
- * Hint: Loop always runs for the smaller number
  */
 
 /*
  * Brute Force Approach
  * Time Complexity: O(min(N1, N2))
  * Space Complexity: O(1)
+ * Hint: Loop always runs for the smaller number
  */
 public static int findGCDBrute(int n1, int n2) {
     int gcd = 1;
@@ -25,6 +25,7 @@ public static int findGCDBrute(int n1, int n2) {
  * Better Approach
  * Time Complexity: O(min(N1, N2))
  * Space Complexity: O(1)
+ * Hint: Loop always runs for the smaller number
  */
 public static int findGCDBetter(int n1, int n2) {
     // Traverse in descending order to find the GCD early
@@ -35,21 +36,19 @@ public static int findGCDBetter(int n1, int n2) {
             return i;
         }
     }
-    return i;
+    return 1;
 }
 
 /*
  * Optimal Approach (Euclidean Algorithm)
+ *
  * Euclidean Algorithm:
- * The Euclidean Algorithm is a method for finding the greatest common divisor (GCD)
- * of two numbers. It operates on the principle that the GCD of two numbers remains
- * the same even if the smaller number is subtracted from the larger number.
+ * The GCD of two numbers remains the same if the larger number
+ * is replaced by its remainder when divided by the smaller number.
  *
- * To find the GCD of n1 and n2 where n1 > n2:
- * 1. Repeatedly subtract the smaller number from the larger number until one of them becomes 0.
- * 2. Once one becomes 0, the other is the GCD of the original numbers.
+ * Hint:
+ * gcd(a, b) = gcd(b, a % b)
  *
- * Hint: gcd(n1, n2) = gcd(n1-n2, n2)
  * Time Complexity: O(log(min(N1, N2)))
  * Space Complexity: O(1)
  */
