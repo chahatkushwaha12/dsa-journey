@@ -1,26 +1,36 @@
 /*
  * Problem:
- * Given a lowercase string, build a hash array that stores
- * the frequency of each character ('a' to 'z').
+ * Given a lowercase string and multiple character queries,
+ * print the frequency of each queried character.
  *
  * Example:
  * Input:
- * String = "abacaba"
+ * Enter the string: abacaba
+ * Enter the number of queries: 4
+ * a
+ * b
+ * c
+ * d
  *
  * Output:
- * hash['a' - 'a'] = 4
- * hash['b' - 'a'] = 2
- * hash['c' - 'a'] = 1
- * hash['d' - 'a'] = 0
+ * 4
+ * 2
+ * 1
+ * 0
  *
  * Explanation:
- * Each index of the hash array represents a lowercase character.
- * The frequency of a character is stored at its corresponding index.
+ * Build a hash array to store the frequency of each lowercase character.
+ * Each query is answered by directly accessing its corresponding index.
  *
- * Time Complexity: O(N)
+ * Time Complexity: O(N + Q)
  * Space Complexity: O(26)
  */
-public static int[] characterFrequency(String str) {
+public static void lowercaseCharacterHashing() {
+
+    Scanner sc = new Scanner(System.in);
+
+    System.out.print("Enter the string: ");
+    String str = sc.nextLine();
 
     // Hash array to store the frequency of lowercase characters ('a' to 'z')
     int[] hash = new int[26];
@@ -30,5 +40,15 @@ public static int[] characterFrequency(String str) {
         hash[str.charAt(i) - 'a']++;
     }
 
-    return hash;
+    System.out.print("Enter the number of queries: ");
+    int q = sc.nextInt();
+
+    while (q-- > 0) {
+
+        System.out.print("Enter the character: ");
+        char ch = sc.next().charAt(0);
+
+        // Fetch and print the frequency of the queried character
+        System.out.println(hash[ch - 'a']);
+    }
 }
