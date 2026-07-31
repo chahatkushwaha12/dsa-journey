@@ -21,9 +21,6 @@
  * Time Complexity: O(N log N)
  * Space Complexity: O(1)
  */
-/*
- * Brute Force Solution
- */
 public static int secondLargestBrute(int[] arr) {
 
     // Sort the array in ascending order.
@@ -53,9 +50,6 @@ public static int secondLargestBrute(int[] arr) {
  *
  * Time Complexity: O(2N)
  * Space Complexity: O(1)
- */
-/*
- * Better Solution
  */
 public static int secondLargestBetter(int[] arr) {
 
@@ -88,9 +82,6 @@ public static int secondLargestBetter(int[] arr) {
  *
  * Time Complexity: O(N)
  * Space Complexity: O(1)
- */
-/*
- * Optimal Solution
  */
 public static int secondLargestOpt(int[] arr) {
 
